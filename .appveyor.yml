@@ -14,19 +14,19 @@ branches:
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
-  au_push: true
+  au_push: false
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: JonBoyleCoding/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: Cr60qAGRI7i7JkHm8VNz9ozsvcGxiUKMAEOHZibipb6rGEn5hy38IaIvhtfoMvRk #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: ofgHNg/xqKyUK4R7gm18EeW6HSJi7XVQAUuC/TkjjIg= #https://ci.appveyor.com/tools/encrypt
   mail_pass:
     secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
   mail_server: smtp.gmail.com
@@ -99,7 +99,7 @@ artifacts:
 notifications:
 - provider: Email
   to: $(mail_user)
-  on_build_success: false
+  on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
 
