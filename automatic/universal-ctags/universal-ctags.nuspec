@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>universal-ctags</id>
+    <title></title>
+    <version></version>
+    <authors>universal-ctags</authors>
+    <owners>JonBoyleCoding</owners>
+    <summary>universal-ctags has the objective of continuing the development from what existed in the Sourceforge area. Github exuberant-ctags repository was started by Reza Jelveh and was later moved to the universal-ctags organization.</summary>
+    <description><![CDATA[
+
+
+![screenshot](https://cdn.rawgit.com/majkinetor/chocolatey/master/copyq/screenshot.png)
+]]></description>
+    <projectUrl>https://ctags.io</projectUrl>
+    <tags>ctags universal-ctags</tags>
+    <copyright>GNU General Public License, version 2</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/majkinetor/chocolatey/master/*****/icon.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <docsUrl>http://docs.ctags.io/en/latest/</docsUrl>
+    <projectSourceUrl>https://github.com/universal-ctags/ctags</projectSourceUrl>
+    <packageSourceUrl>https://github.com/JonBoyleCoding/chocolatey-packages</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.1" />
+      <dependency id="chocolatey" version="0.10.8" />     
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
