@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32:
-   x64:
+   x32: https://github.com/universal-ctags/ctags-win32/releases/download/2019-02-02%2F1b747b38/ctags-2019-02-02_1b747b38-x86.zip
+   x64: https://github.com/universal-ctags/ctags-win32/releases/download/2019-02-02%2F1b747b38/ctags-2019-02-02_1b747b38-x64.zip
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32:
-   checksum64:
+   checksum32: AC644D36587AA9440CD5514B59F44FE88327552DA22CF0BFB1426141106CFD0C
+   checksum64: 17371FE9A3BBF83E12982F07F1BECDB38876D57BD87242A4BF1DD3DC20BD1DCB
 
 Using AU:
 
