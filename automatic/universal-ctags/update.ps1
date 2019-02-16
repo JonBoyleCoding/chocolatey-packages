@@ -13,9 +13,9 @@ function global:au_SearchReplace {
             "(?i)(^\s*packageName\s*=\s*)('.*')"  = "`$1'$($Latest.PackageName)'"
         }
 
-        "$($Latest.PackageName).nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-        }
+        #"$($Latest.PackageName).nuspec" = @{
+        #    "(\<releaseNotes\>).*(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        #}
     }
 }
 
@@ -23,25 +23,24 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Invoke-WebRequest https://api.github.com/repos/universal-ctags/ctags-win32/releases | ConvertFrom-Json
 
-    $re    = '\.zip$'
-    $url   = $download_page.links | ? href -match $re | % href | select -Skip 3 -First 1
-    $url64 = $download_page.links | ? href -match $re | % href | select -Skip 1 -First 1 
+    $url   = $download_page[0].assets | select browser_download_url | where { $_ -notmatch "debug" -and $_ -match "x86" }
+    $url64 = $download_page[0].assets | select browser_download_url | where { $_ -notmatch "debug" -and $_ -match "x64" }
 
-    $version = $url64 -split "/" | select -Skip 5 -First 1
-    $version = $version -split "%" | select -First 1
+    $version = $download_page[0].name -split "/" | select -First 1
     $version = $version -replace "-", "."
 
-    $github = "https://github.com"
-    $url = $github + $url
-    $url64 = $github + $url64
+    $url = $url.browser_download_url
+    $url64 = $url64.browser_download_url
+
+    $releasenotes = $download_page[0].body
 
     @{
         Version      = $version
         URL32        = $url
         URL64        = $url64
-        ReleaseNotes = ''
+        ReleaseNotes = $releasenotes
     }
 }
 
