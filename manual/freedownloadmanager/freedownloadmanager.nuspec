@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>FreeDownloadManager</id>
+    <title>Free Download Manager</title>
+    <version>5.1.38</version>
+    <authors>Free Download Manager .ORG</authors>
+    <owners>JonBoyleCoding</owners>
+    <summary></summary>
+    <description>Free Download Manager splits files into several sections and downloads them simultaneously, allowing you to use any type of connection at the maximum available speed. With FDM download speed increases, or even more!
+
+      When the downloading process is interrupted, you needn't start from the beginning again. Free Download Manager can resume broken download from where it was interrupted saving your time, nerves and money.
+
+      With FDM you can easily organize downloaded files by their type, placing them in predefined folders. A smart scheduler allows you to start and pause downloading files, as well as perform other actions (launch other applications, establish or hang up connection, etc.) at the set time.
+
+      Download files using BitTorrent protocol. Preview audio/video files before download is completed and convert file format after download.
+    </description>
+    <projectUrl>https://www.freedownloadmanager.org</projectUrl>
+    <tags>free download manager web files speed bittorrent</tags>
+    <copyright>GNU General Public License</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/JonBoyleCoding/chocolatey-packages/master/icons/freedownloadmanager.png</iconUrl>
+    <releaseNotes>Today, we’ve updated FDM 5.1. In response to your numerous requests, we’ve added a dark theme to the interface. Bugs on downloading videos were fixed.
+
+Moreover, we published a new official extension in Firefox Add-ons and updated our extension in Chrome Web Store.
+
+Also, pay attention to our special offer in Settings. It’s for those who want to keep up with latest trends.
+
+Download, enjoy and share your experience on our forum!</releaseNotes>
+    <packageSourceUrl>https://github.com/JonBoyleCoding/chocolatey-packages</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
