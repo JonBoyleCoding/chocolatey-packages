@@ -5,10 +5,10 @@ $download_dir = "$Env:TEMP\chocolatey\$packageName\$Env:ChocolateyPackageVersion
 
 $packageArgs = @{
   packageName    = 'universal-ctags'
-  url            = 'https://github.com/universal-ctags/ctags-win32/releases/download/2019-05-14/91c73c53/ctags-2019-05-14_91c73c53-x86.zip'
-  url64Bit       = 'https://github.com/universal-ctags/ctags-win32/releases/download/2019-05-14/91c73c53/ctags-2019-05-14_91c73c53-x64.zip'
-  checksum       = '1E5014C2FD724C79950568EF4E3E4940F5DD8F49EE9EEBB6636192660968DF6D'
-  checksum64     = 'E3CC348126747FD61204FFDAE8B985A3C0EEC7C77A254A419BE94F3F30AD219B'
+  url            = 'https://github.com/universal-ctags/ctags-win32/releases/download/2019-05-15/c8405bea/ctags-2019-05-15_c8405bea-x86.zip'
+  url64Bit       = 'https://github.com/universal-ctags/ctags-win32/releases/download/2019-05-15/c8405bea/ctags-2019-05-15_c8405bea-x64.zip'
+  checksum       = 'A8FF5993E2224F94D0B266F84CBAC9C19BB0BC8F9D389964FA7FC1121EB980A9'
+  checksum64     = '2CDB522081A373F069F5EEA9356E44BD77DFFD0E96DFECF974E902184BFE5CEC'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
