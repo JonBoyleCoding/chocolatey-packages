@@ -5,10 +5,10 @@ $download_dir = "$Env:TEMP\chocolatey\$packageName\$Env:ChocolateyPackageVersion
 
 $packageArgs = @{
   packageName    = 'universal-ctags'
-  url            = 'https://github.com/universal-ctags/ctags-win32/releases/download/2020-12-10/p5.9.20201206.0-17-g6fd18b87/ctags-2020-12-10_p5.9.20201206.0-17-g6fd18b87-x86.zip'
-  url64Bit       = 'https://github.com/universal-ctags/ctags-win32/releases/download/2020-12-10/p5.9.20201206.0-17-g6fd18b87/ctags-2020-12-10_p5.9.20201206.0-17-g6fd18b87-x64.zip'
-  checksum       = '6C06F7DCACF2880B37852FAA6BF1DA7B76DE17278828226368C7D32F9DB47EAD'
-  checksum64     = 'F046139362E5188110FFCE6CCE7D776CCC1CCEBCC592B0B04B8F46B61A2CF67A'
+  url            = 'https://github.com/universal-ctags/ctags-win32/releases/download/2020-12-11/p5.9.20201206.0-19-g0837c42c/ctags-2020-12-11_p5.9.20201206.0-19-g0837c42c-x86.zip'
+  url64Bit       = 'https://github.com/universal-ctags/ctags-win32/releases/download/2020-12-11/p5.9.20201206.0-19-g0837c42c/ctags-2020-12-11_p5.9.20201206.0-19-g0837c42c-x64.zip'
+  checksum       = '1636633CA97427538823A28C95FA9A1ECDFD3D081DB3BA658110103BE2B4F354'
+  checksum64     = '4BE5959E047BF3D1866A86FA7F3EFDE42C6E19947D9E2DB43D7BA8F2147CFAAB'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
