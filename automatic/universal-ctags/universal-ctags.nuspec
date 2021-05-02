@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>universal-ctags</id>
     <title></title>
-    <version>2021.04.27</version>
+    <version>2021.05.01</version>
     <authors>universal-ctags</authors>
     <owners>JonBoyleCoding</owners>
     <summary>universal-ctags has the objective of continuing the development from what existed in the Sourceforge area. Github exuberant-ctags repository was started by Reza Jelveh and was later moved to the universal-ctags organization.</summary>
